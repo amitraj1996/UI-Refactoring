@@ -8,5 +8,6 @@ export const list: any = [
   "item 7",
   "item 8",
   "item 9",
-  "item 10"
+  "item 10",
+  
 ]

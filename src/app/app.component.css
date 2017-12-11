@@ -10,24 +10,32 @@
       margin-right:5px;
 
   }
+  .navbar, .matMenu{
+      top: 0;
+      position: fixed;
+ 
+      width: 100%;
 
+  }
   .container{
-    position: absolute;
-    height: 100%;
-    width: 100%;
+    position: relative;
+    background-color: #cccc;
   }
 
-  .sideNav{
-      padding: 10px;
-      height: 100%;
+  .app{
+    position: fixed;
+    margin-top: 64px;
+    width: 100%;
       
   }
 
   .scrolling-content{
       margin-left:20px;
+      margin-top:15px;
       width: 150px;
   }
 
   .chatContent{
-      padding:10px;
+      overflow: scroll;
+      height: 100vh;
   }

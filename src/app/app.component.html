@@ -1,4 +1,4 @@
-<div class="container">
+<div class="navbar">
     <mat-toolbar color="primary">
         <mat-toolbar-row>
           <button mat-icon-button > <i class="material-icons hamburger" (click)="sidenav.toggle()">dehaze</i> </button>
@@ -8,7 +8,7 @@
           <button mat-icon-button> <i class="material-icons" [matMenuTriggerFor]="menu">more_vert</i> </button>
         </mat-toolbar-row>
       </mat-toolbar>
-      <mat-menu #menu="matMenu">
+      <mat-menu class="matMenu" #menu="matMenu">
           <button mat-menu-item>
               <mat-icon>tag_faces</mat-icon>
               <span>Profile</span>
@@ -18,8 +18,9 @@
               <span>Logout</span>
             </button>
         </mat-menu>
-      <mat-sidenav-container class="sideNav">
-        <mat-sidenav #sidenav mode="side" opened="true">
+</div>
+      <mat-sidenav-container class="app">
+        <mat-sidenav #sidenav mode="side" id="style-1" opened="true">
           <div class="scrolling-content">
             <app-inbox (defaultEvent) = "onDefault($event)"></app-inbox>
             <!-- <mat-divider></mat-divider> -->
@@ -45,4 +46,3 @@
         </div>
       </mat-sidenav-container>
       
-</div>

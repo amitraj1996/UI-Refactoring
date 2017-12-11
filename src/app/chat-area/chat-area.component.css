@@ -1,0 +1,46 @@
+.chatInput{
+    position:fixed;
+    bottom:0px;
+    height:50px;
+    width:100%;
+    background:#F5F1EE;
+    z-index: 0;
+    padding: 5px;
+}
+.chatInput input{
+    padding: 5px 8px;
+    width: 84%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+ul{
+    margin:1em 1em;
+    list-style-type: none;
+}
+
+li{
+
+}
+.user-image {
+    background-image: url('http://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .recieve{
+      margin-bottom: 13px;
+      width: 65%;
+      float: left;
+      background-color: rgba(132, 135, 173, 0.623);
+  }
+
+  .send{
+      width: 65%;
+      float: right;
+      margin-bottom: 13px;
+      background-color: #FAFFD8;
+  }
+
