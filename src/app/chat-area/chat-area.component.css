@@ -8,13 +8,20 @@
     padding: 5px;
 }
 .chatInput input{
+    margin-left:40px;
     padding: 5px 8px;
-    width: 84%;
+    width: 75%;
     height: 100%;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     background-color: #f8f8f8;
+}
+
+@media(min-width:576){
+    .chatInput input{
+        width: 25%;
+    }
 }
 
 ul{
@@ -34,13 +41,20 @@ li{
       margin-bottom: 13px;
       width: 65%;
       float: left;
-      background-color: rgba(132, 135, 173, 0.623);
+      background-color: rgb(245, 245, 245);
+      font-family: "Open Sans",sans-serif;
+      font-size: 14px;
   }
 
   .send{
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
       width: 65%;
       float: right;
       margin-bottom: 13px;
-      background-color: #FAFFD8;
+      background-color: rgb(238, 238, 238);
   }
 
+.chatArea{
+    background: url(../../assets/bg.jpg) repeat;
+}

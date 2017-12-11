@@ -30,12 +30,12 @@
   }
 
   .scrolling-content{
-      margin-left:20px;
-      margin-top:15px;
-      width: 150px;
+
+      width: 250px;
   }
 
   .chatContent{
       overflow: scroll;
       height: 100vh;
+      background: url(../assets/bg.jpg) repeat;
   }
