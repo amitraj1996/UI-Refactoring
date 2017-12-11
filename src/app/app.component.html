@@ -1,30 +1,48 @@
-<mat-sidenav-container class="sidenav-fab-container">
-  <mat-sidenav #sidenav mode="side" opened="true">
-    <div class="scrolling-content">
-      <app-inbox (defaultEvent) = "onDefault($event)"></app-inbox>
-      <!-- <mat-divider></mat-divider> -->
-      <app-my-channels (channelEmitter) = "onChannelSelect($event)"></app-my-channels>
-      <!-- <mat-divider></mat-divider> -->
-      <app-my-contacts (contacts) = "onContactSelect($event)"></app-my-contacts>
-    </div>
-  </mat-sidenav>
-  <button mat-mini-fab class="fab" (click)="sidenav.toggle()">
-    <div ><i class="material-icons">visibility_off</i></div>
-    <div ><i class="material-icons">visibility_on</i></div>
-  </button>
-  <div class="scrolling-content shiftLeft">
-  <span class="boxed">
-	<h1 id="user">
-       Welcome, {{currentUser}}!
-    </h1>
-    <div *ngIf="loggedIn">
-       <!-- <a href="/notifications">Notifications</a> -->
-       <button id="notifications" routerLink = '/notifications'>Notifications</button>
-    </div>
-    <div *ngIf="loggedIn" >
-       <button id="logout" routerLink ="/login" (click)="logout()">Logout</button>
-    </div>
-  <app-chat-area></app-chat-area>
-  </span>
-  </div>
-</mat-sidenav-container>
+<div class="container">
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <button mat-icon-button > <i class="material-icons hamburger" (click)="sidenav.toggle()">dehaze</i> </button>
+          <span>Chat Application</span>
+          <span class="spacer"></span>
+          <button mat-icon-button> <i class="material-icons">notifications</i> </button>
+          <button mat-icon-button> <i class="material-icons" [matMenuTriggerFor]="menu">more_vert</i> </button>
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+              <mat-icon>tag_faces</mat-icon>
+              <span>Profile</span>
+          </button>
+          <button mat-menu-item>
+              <mat-icon>last_page</mat-icon>
+              <span>Logout</span>
+            </button>
+        </mat-menu>
+      <mat-sidenav-container class="sideNav">
+        <mat-sidenav #sidenav mode="side" opened="true">
+          <div class="scrolling-content">
+            <app-inbox (defaultEvent) = "onDefault($event)"></app-inbox>
+            <!-- <mat-divider></mat-divider> -->
+            <app-my-channels (channelEmitter) = "onChannelSelect($event)"></app-my-channels>
+            <!-- <mat-divider></mat-divider> -->
+            <app-my-contacts (contacts) = "onContactSelect($event)"></app-my-contacts>
+          </div>
+        </mat-sidenav>
+        <div class="chatContent">
+          <span class="boxed">
+            <h1 id="user">
+                Welcome, {{currentUser}}!
+            </h1>
+            <div *ngIf="loggedIn">
+              <!-- <a href="/notifications">Notifications</a> -->
+              <button id="notifications" routerLink = '/notifications'>Notifications</button>
+            </div>
+            <div *ngIf="loggedIn" >
+              <button id="logout" routerLink ="/login" (click)="logout()">Logout</button>
+            </div>
+          <app-chat-area></app-chat-area>
+          </span>
+        </div>
+      </mat-sidenav-container>
+      
+</div>

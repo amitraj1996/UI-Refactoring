@@ -1,0 +1,33 @@
+.example-icon {
+    padding: 0 14px;
+  }
+  
+    .spacer {
+    flex: 1 1 auto;
+  }
+
+  .hamburger{
+      margin-right:5px;
+
+  }
+
+  .container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  .sideNav{
+      padding: 10px;
+      height: 100%;
+      
+  }
+
+  .scrolling-content{
+      margin-left:20px;
+      width: 150px;
+  }
+
+  .chatContent{
+      padding:10px;
+  }

@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import 'hammerjs';
 
 import {AppRootComponent } from './app-root.component';
 import { AppComponent } from './app.component';
@@ -18,8 +18,18 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { ChannelsComponent } from './channels/channels.component';
 
 // Material imports to be done below
-import {MatListModule} from '@angular/material';
+import {
+  MatListModule,
+  MatToolbarModule,
+  MatIconModule,
+  MatButtonModule,
+  MatMenuModule,
+  MatCardModule,
+  MatFormFieldModule,
+  MatInputModule,
+} from '@angular/material';
 import {MatSidenavModule} from '@angular/material/sidenav';
+
 
 
 
@@ -52,6 +62,13 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     MatListModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatMenuModule,
+    MatCardModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
     MatSidenavModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes)
