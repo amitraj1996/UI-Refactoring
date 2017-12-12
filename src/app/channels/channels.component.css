@@ -1,0 +1,28 @@
+.channel{
+    width: 600px;
+    height: 450px;
+    position: fixed;
+    bottom: 0;
+    overflow: auto;
+}
+
+@media(min-width:576){
+    .channel{
+        height: 350px;
+    }
+}
+
+ul{
+    list-style-type: none;
+
+}
+li{
+    border-bottom: 1px solid rgba(204, 204, 204, 0.589);
+    width: 89%;
+    padding: 1em 2em;
+}
+
+li:hover{
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+}

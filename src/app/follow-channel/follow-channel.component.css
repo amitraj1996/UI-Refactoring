@@ -1,0 +1,25 @@
+.container{}
+.channels{
+    margin: 10em auto;
+    width: 600px;
+}
+
+.escape{
+    position: absolute;
+    right: 25%;
+    top:10%;
+    border:1px solid grey;
+    border-radius: 50%;
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+button{
+    margin: 10px 5px;
+    position: relative;
+    float: right;
+}
