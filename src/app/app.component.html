@@ -19,7 +19,7 @@
             </button>
         </mat-menu>
 </div>
-      <mat-sidenav-container class="app">
+      <mat-sidenav-container class="app" >
         <mat-sidenav #sidenav mode="side" id="style-1" opened="true">
           <div class="scrolling-content">
             <app-inbox (defaultEvent) = "onDefault($event)"></app-inbox>
@@ -28,8 +28,9 @@
             <!-- <mat-divider></mat-divider> -->
             <app-my-contacts (contacts) = "onContactSelect($event)"></app-my-contacts>
           </div>
+          
         </mat-sidenav>
-        <div class="chatContent">
+        <div class="chatContent" id="style-1">
           <span class="boxed">
             <h1 id="user">
                 Welcome, {{currentUser}}!
@@ -43,6 +44,7 @@
             </div>
           <app-chat-area></app-chat-area>
           </span>
+          
         </div>
       </mat-sidenav-container>
       

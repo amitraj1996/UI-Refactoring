@@ -27,6 +27,7 @@ import {
   MatCardModule,
   MatFormFieldModule,
   MatInputModule,
+  MatExpansionModule,
 } from '@angular/material';
 import {MatSidenavModule} from '@angular/material/sidenav';
 
@@ -67,6 +68,7 @@ const appRoutes: Routes = [
     MatMenuModule,
     MatCardModule,
     MatButtonModule,
+    MatExpansionModule,
     MatFormFieldModule,
     MatInputModule,
     MatSidenavModule,
